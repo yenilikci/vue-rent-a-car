@@ -79,7 +79,9 @@
         ></b-form-datepicker>
         <b-form-timepicker v-model="returnTime" locale="en"></b-form-timepicker>
       </div>
-      <b-button class="mt-3" block variant="outline-dark">Search</b-button>
+      <b-button @click="gotoRent()" class="mt-3" block variant="outline-dark"
+        >Search</b-button
+      >
     </b-form>
   </div>
 </template>
@@ -111,6 +113,7 @@
         pickTime: "",
         returnDate: "",
         returnTime: "",
+        userSelect: [],
       };
     },
     methods: {
@@ -119,6 +122,24 @@
       },
       onSlideEnd() {
         this.sliding = false;
+      },
+      gotoRent() {
+        this.userSelect.push(
+          this.pickLocationValue,
+          this.returnLocationValue,
+          this.pickDate,
+          this.pickTime,
+          this.returnDate,
+          this.returnTime
+        );
+        const userSelect = this.userSelect;
+        this.$router.push({ name: "Rent", params: { userData: userSelect } });
+        //this.$router.go(-1);
+        /*
+        window.history.length > 1
+          ? this.$router.go(-1)
+          : this.$router.push("/");
+        */
       },
     },
   };

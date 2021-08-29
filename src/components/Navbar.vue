@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#">NavBar</b-navbar-brand>
+      <b-navbar-brand href="#">Rent a car</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -14,7 +14,10 @@
           <b-nav-item href="/rent"
             ><b-icon-minecart></b-icon-minecart> Rent</b-nav-item
           >
-          <b-nav-item href="#">Agreement</b-nav-item>
+          <b-nav-item href="#"
+            ><b-icon-file-earmark-check></b-icon-file-earmark-check>
+            Agreement</b-nav-item
+          >
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

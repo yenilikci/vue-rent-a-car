@@ -15,6 +15,7 @@ const routes = [
     path: "/rent",
     name: "Rent",
     component: Cars,
+    props: true,
   },
 ];
 
