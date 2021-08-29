@@ -7,11 +7,13 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">
+          <b-nav-item href="/">
             <b-icon-house-door></b-icon-house-door>
             Home</b-nav-item
           >
-          <b-nav-item href="#">Rent</b-nav-item>
+          <b-nav-item href="/rent"
+            ><b-icon-minecart></b-icon-minecart> Rent</b-nav-item
+          >
           <b-nav-item href="#">Agreement</b-nav-item>
         </b-navbar-nav>
 

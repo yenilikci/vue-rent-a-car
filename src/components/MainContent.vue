@@ -59,7 +59,7 @@
         size="sm"
         class="mt-1"
       ></b-form-select>
-      <label class="mr-sm-2">Return Location:</label>
+      <label class="mt-2">Return Location:</label>
       <b-form-select
         v-model="returnLocationValue"
         :options="returnLocation"
@@ -79,7 +79,7 @@
         ></b-form-datepicker>
         <b-form-timepicker v-model="returnTime" locale="en"></b-form-timepicker>
       </div>
-      <b-button class="mt-2" block variant="outline-dark">Search</b-button>
+      <b-button class="mt-3" block variant="outline-dark">Search</b-button>
     </b-form>
   </div>
 </template>
@@ -127,7 +127,7 @@
 <style>
   .formReservation {
     position: absolute;
-    height: 370px;
+    height: 390px;
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
